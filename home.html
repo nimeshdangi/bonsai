@@ -1,0 +1,293 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>
+            Get Tree
+        </title>
+        
+        <meta name = "author" content = "Sujal Khatiwada"/>
+		<meta name = "description" content = "The home page for Get Tree Traders"/>
+		<meta name = "keywords" content = "Bonsai, Get Tree, "/>
+
+		<link rel = "stylesheet" href="./style/style.css"/>
+        <style type="text/css">
+
+        	.wrapper h2{
+        		text-align: center;
+        		margin:20px;
+        	}
+        	.home img{
+        		width: 100%;
+        		height:600px;
+        		margin-top: 0px;
+        	}
+        	.home div{
+        		 /* 0.5 is for transparency, 0 is full transparency. 1 is opaque*/
+   		  		position: absolute; /* anchored to the parent div. top and right is its position in parent div */
+        		background: rgba(0, 0, 0, 0.5);   		  		
+        		right:0%;
+   		  		top:9.5%;
+   		  		font-size: 50px;
+   		  		width: 100%;
+   		  		height: 600px;
+   		  	}
+   		  	.home p{
+   		  		color: white;
+   		  		text-align: center;
+				margin: 15%;
+	 		  }
+
+	 		 .productHome{
+	 		 	display: flex;
+	 		 	justify-content: space-around;
+	 		 	width:100%;
+	 		 	height:600px;
+
+	 		 }
+
+	 		 .productItem{
+	 		 	display: flex;
+	 		 	background-color: #B7F59C;
+	 		 	width: 27%;
+	 		 	height:90%;
+	 		 	justify-content: space-between;
+	 		 	flex-direction: column;
+	 		 	border-radius: 25px;
+	 		 	border:2px solid forestgreen;
+
+	 		 }
+	 		 .productItem img{
+	 		 	width:50%;
+	 		 	height:50%; 
+	 		 	border-radius: 50%;
+	 		 	align-self: center;
+	 		 	margin-top: 8px;
+	 		 }
+	 		 .productItem div{
+	 		 	height:30%;
+	 		 	width: 80%;
+	 		 	align-self: center;
+
+	 		 }
+
+			 
+	 		 .buyButton{
+	 		 	border-radius:10%;
+	 		 	border:2px solid darkgreen;
+	 		 	font-size: 25px;
+	 		 	width:10%;
+	 		 	height:15%;
+	 		 	background-color: #79C769;
+	 		 }
+
+
+	 		 .aboutUsHome{
+	 		 	display: flex;
+	 		 	justify-content: flex-end;
+	 		 	width:95%;
+	 		 	height: 450px;
+	 		 	padding: 5px;
+	 		 }
+
+	 		 .aboutUsHome div{
+
+	 		 	width:40%;
+	 		 	height:100%;
+	 		 }
+
+			 .researchHome{
+				display: flex;
+				width: 100%;
+				height:400px;
+				justify-content: center;
+			 }
+
+			 .researchHome div{
+				margin-top: 1.5%;
+				width: 40%;
+				height:90%;
+			 }
+
+			 .blogHome{
+				display: flex;
+				width:100%;
+				height:400px;
+				justify-content: center;
+			 }
+
+			 .blogHome div{
+				width: 40%;
+				height: 100%;
+			 }
+
+			 p{
+				font-size: 30px;
+			 }
+			 
+
+			 
+
+		</style>
+	</head>
+
+	<body style="background-color: whitesmoke;">
+		<div class="wrapper" style="width: 100%; height:3000px">
+			<nav>
+				<div class="nav">
+					<img src="media/nav/logo.jpg" style="align-self: flex-start; width: 7%; height:100%;">
+					<img src="./media/nav/home.png" style="width:3%; height:100%; align-self: flex-start;">
+					<a class="active" href="#home"> Home </a>
+					<a href="./pages/product.html"> Products </a>
+					<a href="./pages/research.html"> Research </a>
+					<a href="./pages/blog.html"> Blog </a>
+					<a href="./pages/aboutus.html"> About Us </a>
+				</div>
+			</nav>
+
+			<div class="goup">
+				<img src="./media/nav/up-arrow.png" onclick="goUp()" id="upButton" style="width:40px; height:40px">
+			</div>
+
+			<div class="home">
+				<img src="./media/home/banner.jpg"/>
+				<div>
+					<p style="font-size: 50px;">Your one stop to all your bonsai needs.</p>
+				</div>
+			</div>
+			
+			<h2> Our Lineup of Products </h2> <button  onclick="changeProduct()"> <img src="./media/home/cycle.png" style="width: 40px; height:40px;"/> </button>
+			<div class="productHome">
+
+				<div class="productItem" id="pro1">
+					<img src="./media/product/Japanese-Maple.png"/>
+					<h2> Japanese Maple </h2>
+					<div>
+						Japanese maple is a terrific garden plant. It is one of the most versatile small trees for use in the landscape. It exists in a multitude of forms that provide a wide range of sizes, shapes, and colors. Japanese maple is a magnificent specimen or accent plant and performs well..<a href="https://bernheim.org/learn/trees-plants/bernheim-select-urban-trees/japanese-maple/">.learn more</a>
+					</div>
+					<div style="display: flex; width:100%; height:10%;">					
+						<marquee style="font-size: 18px; align-self:center;"> Product Out Of Stock!!!!</marquee>
+					</div>
+
+				</div>
+				<div class="productItem" id="pro2">
+					<img src="./media/product/Bodhi-Tree.png"/>
+					<h2>  Bodhi Tree </h2>
+					<div>
+						Bodhi tree is the tree under which Gautam Buddha is believed to have gained enlightment. This breed also holds a 
+						religious significance to the people in the Indian subcontinent, notably followers of Hinduism, Buddhism, and 
+						Jainism religions..<a href="https://abanahomes.com/ficus-religiosa-bonsai-care/">.learn more </a>
+							
+					</div>
+					<div class="buyButton" style="height:7%; width:30%; text-align: center; margin-bottom:3px">
+						<a href="./pages/product.html" style="text-decoration: none;"> Buy Now </a>
+					</div>
+				</div>
+
+				<div class="productItem" id="pro3">
+					<img src="./media/product/Prunus.png"/>
+					<h2> Prunus </h2>
+					<div>
+						In Japan's Nara period (710–794) a tradition began of watching and appreciating the cherry blossom, called Sakura. The short period in which the cherries bloom has become a national obsession and is a period of great importance to the Japanese. Needless to say, many cherry blossom..<a href="https://www.bonsaiempire.com/tree-species/cherry-prunus">.learn more</a>
+					</div>
+					<div class="buyButton" style="height:7%; width:30%; text-align: center; margin-bottom: 3px;">
+						<a href="./pages/product.html" style="text-decoration: none;">	Buy Now </a>
+					</div>
+				</div>				
+			</div>
+
+			<h2> Research </h2>
+			<div class="researchHome">
+				<div>
+					<p>
+						Very few things in this world can be considered new.
+						We too, have had to research through many websites to reference good design. 
+						Some design we believe we have made better, while some we might have not managed to reach even a fraction of the great design..<a href="./pages/research.html">.learn more.</a> 
+					</p>
+				</div>	
+				<div>
+					<img src="./media/home/choose.png" style="width: 500px; height: 400px;"/>
+				</div>		
+			</div>
+
+			<h2> Our data gathered on the more technical side</h2>
+			<div class="blogHome">
+				<div>
+					<img src="./media/home/blog.jpg" style="width: 500px; height: 400px;">
+				</div>
+
+				<div>
+					<p> The entire world runs on technology. Everything from airplanes to banks to computers to even the way water is coming in your house,
+						all of it is technology. As such an integral part of our life, technology has many advantages and disadvantages. Even for our bonsai,
+						the correct technology can..<a href="./pages/blog.html">.learn more.</a></p>
+				</div>
+
+			</div>
+
+			<h2> Read our story</h2>
+			<div class="aboutUsHome">
+				<div style="margin-right: 20px";>
+					<p style="text-align: center; margin-top: 140px;">
+						Towards the end of Week 6, a project was handed down to us. 
+						This project was related to the creation of an e-commerce based website partaking in the selling of bonsai plants<a href="./pages/contact.html">...learn more.</a>
+					</p>
+				</div>
+				<div>
+					<img src="./media/home/group.jpg" style="width:585px; height:450px"/>
+				</div>
+			</div>
+
+			<footer>
+				<div>
+					<a href="#home"> Our Main Page </a>
+					<a href="./pages/product.html"> Check Out Our Products </a>
+					<a href="./pages/blog.html"> Read Our Blog </a>
+					<a href="./pages/research.html"> Look Through Our Research </a>
+				</div>
+
+				<div>
+					<a href="./pages/aboutus.html"> Learn More About Us </a>
+					<a href="./pages/contact.html"> Send Us Your Queries </a>
+				</div>
+
+				<div class="logo">
+					<h3> Social Media </h3>
+					<a href="#tw"> <img src="./media/nav/twitter.png"/> </a>
+					<a href="#ig"> <img src="./media/nav/instagram.png"/> </a>
+					<a href="#fb"> <img src="./media/nav/facebook.png"/> </a>
+				</div>
+
+			</footer>
+
+		</div>
+       <script src="./scripts/script.js"> </script>
+	   <!-- Function doesn't work at all within the script tag with link-->
+		<script>
+			//This function takes the id of an item in a flexbox for manipulating its order
+			function changeProduct(){
+				if (document.getElementById("pro1").style.order == 0){
+					document.getElementById("pro1").style.order = "2";
+					document.getElementById("pro2").style.order = "3";
+					document.getElementById("pro3").style.order = "1";
+				}
+				else if (document.getElementById("pro1").style.order == 2){
+					document.getElementById("pro1").style.order = "3";
+					document.getElementById("pro2").style.order = "2";
+					document.getElementById("pro3").style.order = "1";
+				}
+				else if (document.getElementById("pro1").style.order == 3){
+					document.getElementById("pro1").style.order = "1";
+					document.getElementById("pro2").style.order = "3";
+					document.getElementById("pro3").style.order = "2";
+				}
+				else{
+					document.getElementById("pro1").style.order == "0";
+					console.log("Error");
+				
+				}
+
+			
+			}
+		</script>
+
+	</body>
+</html>

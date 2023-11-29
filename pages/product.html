@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Get Tree
+        </title>
+        
+        <meta name = "author" content = "Bishal Prasaub"/>
+		<meta name = "description" content = "The Product page for Get Tree Traders"/>
+		<meta name = "keywords" content = "Bonsai, Get Tree, Products, Wisteria, Money Plant"/>
+
+		<link rel="stylesheet" href="../style/style.css"/>
+        <style>
+            .wrapper{
+                width: 95%;
+                text-align: center;
+                margin: auto;
+            }
+            .circle{
+                border-radius: 100%;
+            }
+
+
+
+            .price{
+                text-align: center;
+                height: 12px; 
+                font-size: large;
+                margin-bottom:20px;
+            }
+
+            button{
+            border: none;
+            background-color: orangered;
+            color: white;
+            }
+            h1, h2{
+                text-align: center;
+            }
+
+            #slider img{
+                width: 100%;
+                height: 100%; 
+                border-radius: 50%;
+            }
+
+            .container{
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                overflow: scroll;
+                width:95%;
+                height:510px;
+                
+            }
+
+            .product{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 24%;
+                height:500px;
+                border: 3px solid lightslategray;
+                border-radius: 20px;
+                background-color: lightgrey;
+            }
+
+            img{
+                margin: auto;
+                border-radius: 50%;
+                margin-bottom: 5px;
+                width: 98%;
+                height: 98%;
+            }
+
+            .nav img{
+                margin: 0px 0px 0px 0px;
+                border-radius: 0px;
+            }
+
+            .footer img{
+                margin: 0px 0px 0px 0px;
+                border-radius: 0px;
+            }
+
+            .price{
+                font-size: large;
+                color: #ed6969;
+                width: 90%;
+                height:40px;
+                
+            }
+
+            .span{
+                color: #5151d5;
+            }
+
+            .button{
+                border-color: white;
+                color:white;
+                border: 3px solid;
+                 border-radius: 5px;
+                 background-color: orangered;
+                width:80px;
+                margin: auto;
+                margin-top: -20px;
+                cursor: pointer;
+            }
+
+            .buttonAdd{
+                margin-top: 4px;
+                border-color: white;
+                color:white;
+                border: 3px solid;
+                 border-radius: 5px;
+                 background-color: orangered;
+                width:110px;
+                margin: auto;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                cursor: pointer;
+            
+            }
+            .area{
+                text-align: center;
+                background-color:rgb(217, 217, 201);
+                height: 208px;
+                border-radius: 20px;
+            }
+
+        </style>
+    </head>
+
+    <body style="background-color:rgb(154, 213, 154) ;">
+        <nav>
+            <div class="nav">
+                <img src="../media/nav/logo.jpg" style="align-self: flex-start; width: 7%; height:100%;">
+                <img src="../media/nav/cart.png" style="width:3%; height:100%; align-self: flex-start;">
+                <a href="../home.html"> Home </a>
+                <a class="active" href="#products"> Products </a>
+                <a href="research.html"> Research </a>
+                <a href="blog.html"> Blog </a>
+                <a href="aboutus.html"> About Us </a>
+            </div>
+        </nav>
+        <div class="wrapper">
+            <div id="slider" style="width:30% ;height:400px;margin-top: 15px;border-radius:50%; margin-left:auto; margin-right: auto;">
+                <img id="slide" src="../media/product/Bodhi-Tree.png">
+            </div>
+            <!-- Best selling prodcuts -->
+            <h1> Best Selling Products</h1>
+            <div class="container">
+                <!--Pachira-->
+                <div class="product" id="1">                   
+                    <img src="../media/product/Pachira.png"/>
+                    <div class="area">       
+                    <h2> Pachira</h2> <br>
+                        <div class="price"> 
+                            Rs <strike>400</strike> 320 <span class="span"> (20% OFF)</span> 
+                        </div>
+                        <div class="button" onclick="buyPopup()"> BUY NOW</div>
+                        <div class="buttonAdd" onclick="cartPopup()"> ADD TO CART</div>
+                    </div>
+                </div>
+
+                <!--Money Plant-->
+                <div class="product" id="2">                   
+                    <img src="../media/product/Money plant.png"/>
+                    <div class="area">       
+                    <h2> Money Plant</h2> <br>
+                        <div class="price"> 
+                            Rs <strike>300</strike> 255 <span class="span"> (15% OFF)</span> 
+                        </div>
+                        <div class="button" onclick="buyPopup()"> BUY NOW</div>
+                        <div class="buttonAdd" onclick="cartPopup()"> ADD TO CART</div>
+                    </div>
+                </div>
+
+                <!--Potted Rose-->
+                <div class="product" id="3">                   
+                    <img src="../media/product/Potted Rose.png"/>
+                    <div class="area">       
+                    <h2> Potted Rose</h2> <br>
+                        <div class="price"> 
+                            Rs <strike>500</strike> 450 <span class="span"> (10% OFF)</span> 
+                        </div>
+                        <div class="button" onclick="buyPopup()"> BUY NOW</div>
+                        <div class="buttonAdd" onclick="cartPopup()"> ADD TO CART</div>
+                    </div>
+                </div>
+
+                <!--Symgonium Plant-->
+                <div class="product" id="4">                   
+                    <img src="../media/product/Symgonium Plant.png"/>
+                    <div class="area">       
+                    <h2> Symgonium Plant</h2> <br>
+                        <div class="price"> 
+                            Rs <strike>600</strike> 540 <span class="span"> (10% OFF)</span> 
+                        </div>
+                        <div class="button" onclick="buyPopup()"> BUY NOW</div>
+                        <div class="buttonAdd" onclick="cartPopup()"> ADD TO CART</div>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+            <h1> Products</h1>
+            <div class="container" style="height:1100px">
+                <!-- Bodhi Tree -->
+                <div class="product">
+                    <img src="../media/product/Bodhi-Tree.png"/>
+                    <div class="area">       
+                    <h2> Bodhi Tree</h2> <br>
+                        <div class="price"> 
+                            Rs <strike>300</strike> 255 <span class="span"> (15% OFF)</span> 
+                        </div>
+                        <div class="button" onclick="buyPopup()"> BUY NOW</div>
+                        <div class="buttonAdd" onclick="cartPopup()"> ADD TO CART</div>
+                    </div>
+                </div>
+
+                <!-- Prunus -->
+                <div class="product">
+                    <img src="../media/product/Prunus.png"/>
+                    <div class="area">       
+                    <h2> Prunus</h2> <br>
+                        <div class="price"> 
+                            Rs <strike>560</strike> 504 <span class="span"> (10% OFF)</span> 
+                        </div>
+                        <div class="button" onclick="buyPopup()"> BUY NOW</div>
+                        <div class="buttonAdd" onclick="cartPopup()"> ADD TO CART</div>
+                    </div>
+                </div>
+
+                <!-- Bougainvillea -->
+                <div class="product">
+                    <img src="../media/product/Bougainvillea.png"/>
+                    <div class="area">       
+                    <h2> Bougainvillea</h2> <br>
+                        <div class="price"> 
+                            Rs <strike>440</strike> 396 <span class="span"> (15% OFF)</span> 
+                        </div>
+                        <div class="button" onclick="buyPopup()"> BUY NOW</div>
+                        <div class="buttonAdd" onclick="cartPopup()"> ADD TO CART</div>
+                    </div>
+                </div>
+
+                <!-- Ficus Compacta -->
+                <div class="product">
+                    <img src="../media/product/ficus Compacta.png"/>
+                    <div class="area">       
+                    <h2> Ficus Compacta</h2> <br>
+                        <div class="price"> 
+                            Rs <strike>150</strike> 120 <span class="span"> (20% OFF)</span> 
+                        </div>
+                        <div class="button" onclick="buyPopup()"> BUY NOW</div>
+                        <div class="buttonAdd" onclick="cartPopup()"> ADD TO CART</div>
+                    </div>
+                </div>
+
+                <!-- Zelkova -->
+                <div class="product">
+                    <img src="../media/product/Zelkova.png"/>
+                    <div class="area">       
+                    <h2> Zelkova</h2> <br>
+                        <div class="price"> 
+                            Rs <strike>600</strike> 300 <span class="span"> (50% OFF)</span> 
+                        </div>
+                        <div class="button" onclick="buyPopup()"> BUY NOW</div>
+                        <div class="buttonAdd" onclick="cartPopup()"> ADD TO CART</div>
+                    </div>
+                </div>
+
+                 <!-- Oak Quercus -->
+                 <div class="product">
+                    <img src="../media/product/Oak Quercus.png"/>
+                    <div class="area">       
+                    <h2> Oak Quercus</h2> <br>
+                        <div class="price"> 
+                            Rs <strike>200</strike> 190 <span class="span"> (5% OFF)</span> 
+                        </div>
+                        <div class="button" onclick="buyPopup()"> BUY NOW</div>
+                        <div class="buttonAdd" onclick="cartPopup()"> ADD TO CART</div>
+                    </div>
+                </div>
+
+                 <!-- Wisteria -->
+                 <div class="product">
+                    <img src="../media/product/Wisteria.png"/>
+                    <div class="area">       
+                    <h2> Wisteria</h2> <br>
+                        <div class="price"> 
+                            Rs <strike>500</strike> 425 <span class="span"> (15% OFF)</span> 
+                        </div>
+                        <div class="button" onclick="buyPopup()"> BUY NOW</div>
+                        <div class="buttonAdd" onclick="cartPopup()"> ADD TO CART</div>
+                    </div>
+                </div>
+
+                 <!-- Pines -->
+                 <div class="product">
+                    <img src="../media/product/Pines.png"/>
+                    <div class="area">       
+                    <h2> Pines</h2> <br>
+                        <div class="price"> 
+                            Rs <strike>200</strike> 180 <span class="span"> (10% OFF)</span> 
+                        </div>
+                        <div class="button" onclick="buyPopup()"> BUY NOW</div>
+                        <div class="buttonAdd" onclick="cartPopup()"> ADD TO CART</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="goup">
+            <img src="../media/nav/up-arrow.png" onclick="goUp()" id="upButton" style="width:40px; height:40px">
+        </div>
+        <footer>
+            <div>
+                <a href="../home.html"> Our Main Page </a>
+                <a href="#products"> Check Out Our Products </a>
+                <a href="blog.html"> Read Our Blog </a>
+                <a href="research.html"> Look Through Our Research </a>
+            </div>
+
+            <div>
+                <a href="aboutus.html"> Learn More About Us </a>
+                <a href="contact.html"> Send Us Your Queries </a>
+            </div>
+
+            <div class="logo">
+                <h3> Social Media </h3>
+                <a href="#tw"> <img src="../media/nav/twitter.png"/> </a>
+                <a href="#ig"> <img src="../media/nav/instagram.png"/> </a>
+                <a href="#fb"> <img src="../media/nav/facebook.png"/> </a>
+            </div>
+
+        </footer>
+        
+
+        <script src="../scripts/script.js"> 
+        </script>
+        <script>
+            //Alerts the user whenver function is called
+            function cartPopup() {
+                alert(" Successfully added to cart")
+            }
+            //Alerts the user whenever function is called
+            function buyPopup() {
+                alert("Congratulations! You have succesfully purchased the product")
+            }
+            //Function called from scripts.js for slideshow
+            slideshow("product", "slider", 3000, ["Bodhi-Tree.png", "Bougainvillea.png", "ficus Compacta.png", "Japanese-Maple.png", "Wisteria.png", "Zelkova.png", "Pines.png"]);
+        </script>
+
+        
+    </body>
+</html>

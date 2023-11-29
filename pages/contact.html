@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name = "author" content = "Nimesh Dangi"/>
+	<meta name = "description" content = "The contact us page for Get Tree Traders"/>
+	<meta name = "keywords" content = "Bonsai, Get Tree, Contact, Form, Feedback Form"/>
+  <title>Get Tree</title>
+  <link rel="stylesheet" href="../style/style.css">
+
+  <style>
+    *{
+      margin: auto;
+      padding: 0;
+    }
+    /* defining the label for several elements */
+    label{
+      display:block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    /* defining the layout of the input and text area as well as fixing the size and css  */
+    input,textarea{
+      width: 96%;
+      padding:12px;
+      border: 3px solid #ccc;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+     /* styling submit button */
+    .submit-btn{
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;    
+    }
+    /* setting a hover effect */
+    .submit-btn:hover{
+      background-color: yellowgreen;
+    }
+
+
+
+
+  </style>
+</head>
+<body style="background-color: whitesmoke;">
+  <nav>
+    <div class="nav">
+      <img src="../media/nav/logo.jpg" style="align-self: flex-start; width: 7%; height:100%;">
+      <img src="../media/nav/about-us.png" style="width:3%; height:100%; align-self: flex-start;">
+      <a href="../home.html"> Home </a>
+      <a href="product.html"> Products </a>
+      <a href="research.html"> Research </a>
+      <a href="blog.html"> Blog </a>
+      <a class ="active" href="#aboutus"> About Us </a>
+    </div>
+  </nav>
+  <br>
+  <!-- The main division for the particular page goes here -->
+  <div class="container" style="width: 50%; height: 650px; margin:0 auto;background-color: azure;">
+    <h1 style="text-align: center; text-decoration: overline underline;">(If you're having problems with our website.)</h1>
+    <h2 style="text-align: center;">Contact Us</h2>
+    <!-- Main section for the form goes here -->
+    <form style="padding:20px">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" required>
+
+      <label for="phone"> Phone:</label>
+      <input type="number" id="phone" name="phone" required>
+
+      <label for="email"> Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Leave us a message:</label>
+      <textarea id="message" name="message" placeholder="Leave me a text if you are having difficulties with our website."></textarea>
+
+      <input type="submit" value="Send" class="submit-btn" onclick="messageSent()"> 
+    </form>
+    <!-- form ends -->
+    <!-- ending main division -->
+  </div>
+  <div class="goup">
+    <img src="../media/nav/up-arrow.png" onclick="goUp()" id="upButton" style="width:40px; height:40px">
+  </div>
+  <footer>
+    <div>
+      <a href="../home.html"> Our Main Page </a>
+      <a href="product.html"> Check Out Our Products </a>
+      <a href="blog.html"> Read Our Blog </a>
+      <a href="research.html"> Look Through Our Research </a>
+    </div>
+
+    <div>
+      <a href="#aboutus"> Learn More About Us </a>
+      <a href="contact.html"> Send Us Your Queries </a>
+    </div>
+
+    <div class="logo">
+      <h3> Social Media </h3>
+      <a href="#tw"> <img src="../media/nav/twitter.png"/> </a>
+      <a href="#ig"> <img src="../media/nav/instagram.png"/> </a>
+      <a href="#fb"> <img src="../media/nav/facebook.png"/> </a>
+    </div>
+
+  </footer>
+  <!-- Java script goes here for to check the validation of the form and to display a suitable pop-up -->
+  <script>
+    //removme phone
+    function messageSent() {
+      var nameD = document.getElementById("name").value;
+      var lastD = document.getElementById("address").value;
+      var phD = document.getElementById("phone").value;
+      var emailD = document.getElementById("email").value;
+      var message = document.getElementById("message").value;
+        if (nameD=="" || lastD=="" || phD=="" || emailD=="" || message=="")
+        {
+          if (nameD=="" && lastD=="" &&emailD=="" && message=="")
+          {
+            alert("All empty");
+          }
+          else if (nameD=="" && lastD=="" && emailD=="")
+          {
+            alert("Name, address, Email empty");
+          }
+          else if (nameD=="" && lastD=="" && message=="")
+          {
+            alert("Name,address, message empty")
+          }
+          else if (nameD=="" && message=="" && emailD=="")
+          {
+            alert("Name,message,email empty")
+          }
+          else if(emailD=="" && message=="" && lastD=="")
+          {
+            alert("email,message,address empty")
+          }
+          else if(nameD=="" && lastD=="")
+          {
+            alert("Name,address empty")
+          }
+          else if(nameD=="" && message=="")
+          {
+            alert("Name, message empty")
+          }
+          else if(nameD=="" && emailD=="")
+          {
+            alert("Name, email empty")
+          }
+          else if(lastD=="" && message=="")
+          {
+            alert("address, message empty")
+          }
+          else if(lastD==""&& message=="")
+          {
+            alert("address,message empty")
+          }
+          else if(message=="" && address=="")
+          {
+            
+          }
+          else if(nameD=="")
+          {
+            alert("Name is empty")
+          }
+          else if(lastD=="")
+          {
+            alert("address is empty")
+          }
+          else if(email=="")
+          {
+            alert("email is empty")
+          }
+          else{
+            alert("Message empty");
+          }
+
+        }
+        else{
+          alert("Congratulation!!Your message has been sent.") 
+        }
+    
+    }
+  </script>
+  <script src="../scripts/script.js"> </script>
+  
+</body>
+</html>

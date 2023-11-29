@@ -1,0 +1,135 @@
+ /* Author: Nimesh Dangi*/
+   /* external css for styling goes here */
+   html{
+    box-sizing: border-box;
+    /* specified width and height are not changed even if we add paddings or border */
+   }
+   /* specifying the font family for the body  */
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding:0;
+       }
+  .header {
+    background-color:  #F5F5F5;
+    padding: 30px;
+    text-align: center;
+  }
+  /* properties for header section OUR TEAM */
+  .header h1 {
+    margin: 0;
+    text-transform: uppercase;
+  }
+  /* main div for content creation  */
+  .container {
+    /* This means that the container wont be wider than 1400px  */
+    max-width: 1400px;
+    /* left and right margin are automatically set by the browser and iot helps to make the element to locate in the center */
+    margin: 0 auto;
+    display: flex;
+    /* flex-wrap checks whether the flex items are forced onto oneline or else multiple lines */
+    flex-wrap:wrap;
+  }
+  /* about us portion */
+  .about-section {
+    /* will take up two times the amount of space as compared to other flex in the same container */
+    flex:2;
+    /* creates a space around the content seperating it from other element */
+    padding: 30px;
+  }
+  
+  .about-section p {
+    line-height: 1.5;
+  }
+  /* setting the needful css for the image section */
+  .image-section {
+    flex: 5;
+    /* used to allocate space between element and the border */
+    padding: 30px;
+    text-align: center;
+    height: 650px;
+    width: 60%;
+    margin-left: 40px;
+  }
+  .image-section img {
+    max-width: 90%;
+  }
+  .team-section {
+    flex: 1;
+    padding: 30px;
+  }
+  .team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .team-member img {
+    width: 110px;
+    height: 100px;
+    border-radius: 30%;
+  }
+  .team-member h3 {
+    margin-left: 10px;
+  }
+  /* using flex so the content can be aligned verticlly and horizontally. align-items to set the content vertically, justify-contnt to set the content horizontally. */
+  /* this is the css property for the banner portion */
+ .welcome{
+  background-color:white;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  box-shadow: 0px 2px 5px gray;
+ }
+ /* css for banner portion ends here */
+ 
+ 
+ 
+ @media screen and(max-width:650px){
+  .column{
+    width:100%;
+    display:block;
+  }
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+  .ayush{
+    padding:50px 35% 50px 35%;
+    
+
+}
+
+  
+ 
+}
+
+.list
+{
+ padding-left: 25px;
+ font-size: 15px;
+ 
+ 
+}
+/* Used to prevent previous floating element in a container */
+.clear {
+  clear: both;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1 0 18%; /* The important bit. This percentage decides your columns. 
+ The percent can be px. It just represents your minimum starting width.
+  */
+  margin: 5px;
+  /* background: tomato; */
+  height: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
